@@ -1,0 +1,19 @@
+All code provided in this package, except for the anvil and melting furnace, is licensed under CC-BY-SA-4.0
+Original axistools (c) 2019 by PolySaken
+Rework (c) 2024-2025 by keymen
+Full license: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+The code of the anvil and melting furnace provided in this package is licensed under with LGPL-2.1
+Copyright (C) 2019  Skamiz Kazzarch
+Rework (c) 2024-2025 by keymen
+Full license: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html
+
+All textures provided in this package are licensed under CC-BY-SA-3.0
+Copyright (C) 2025  by keymen
+They are derived form textures by
+celeron55, Perttu Ahola <celeron55@gmail.com> (CC BY-SA 3.0)
+Full license: https://creativecommons.org/licenses/by-sa/3.0/legalcode
+
+All models provided in this package are licensed under CC-BY-SA-4.0
+Copyright (C) 2025  by keymen
+Full license: https://creativecommons.org/licenses/by-sa/4.0/legalcode

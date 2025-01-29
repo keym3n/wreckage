@@ -1,0 +1,388 @@
+# textdomain: wreckage
+Mithril Pickaxe=Мифриловая Кирка
+Mithril Shovel=Мифриловая Лопата
+Mithril Sword=Мифриловый Меч
+Mithril Hoe=Мифриловая Мотыга
+Mithril Axe =Мифриловый Топор
+Hot mithril ingot=Горячий мифриловый слиток
+Defected mithril ingot=Дефектный мифриловый слиток
+Mithril=Мифрил
+Mythic=Мифический
+
+Mithril pickaxe head=Мифриловый обух кирки
+Mithril shovel head=Мифриловый обух лопаты
+Mithril sword head=Мифриловое лезвие меча
+Mithril hoe head=Мифриловый обух мотыги
+Mithril axe head=Мифриловый обух топора
+Mithril tool rod=Мифриловый стержень инструмента
+Mithril tool binding=Мифриловый крепеж инструмента
+
+
+Wood Pickaxe=Деревянная Кирка
+Wood Shovel=Деревянная Лопата
+Wood Sword=Деревянный Меч
+Wood Hoe=Деревянная Мотыга
+Wood Axe=Деревянный Топор
+Cheapness=Дешевизна
+Wood=Дерево
+
+Wood pickaxe head=Деревянный обух кирки
+Wood shovel head=Деревянный обух лопаты
+Wood sword head=Деревянное лезвие меча
+Wood hoe head=Деревянный обух мотыги
+Wood axe head=Деревянный обух топора
+Wood tool rod=Деревянный стержень инструмента
+Wood tool binding=Деревянное крепление инструмента
+
+
+Stone Pickaxe=Каменная Кирка
+Stone Shovel=Каменная Лопата
+Stone Sword=Каменный Меч
+Stone Hoe=Каменная Мотыга
+Stone Axe=Каменный Топор
+Stoneborn=Камнерожденный
+Stone=Камень
+
+Stone pickaxe head=Каменный обух кирки
+Stone shovel head=Каменный обух лопаты
+Stone sword head=Каменное лезвие меча
+Stone hoe head=Каменный обух мотыги
+Stone axe head=Каменный обух топора
+Stone tool rod=Каменный стержень инструмента
+Stone tool binding=Каменное крепление инструмента
+
+
+Steel Pickaxe=Стальная Кирка
+Steel Shovel=Стальная Лопата
+Steel Sword=Стальной Меч
+Steel Hoe=Стальная Мотыга
+Steel Axe=Стальной Топор
+Hot steel ingot=Горячий стальной слиток
+Defected steel ingot=Дефектный стальной слиток
+Reinforced=Укрепленный
+Steel=Сталь
+
+Steel pickaxe head=Стальной обух кирки
+Steel shovel head=Стальной обух лопаты
+Steel sword head=Стальное лезвие меча
+Steel hoe head=Стальной обух мотыги
+Steel axe head=Стальной обух топора
+Steel tool rod=Стальной стержень инструмента
+Steel tool binding=Стальное крепление инструмента
+
+
+Gold Pickaxe=Золотая Кирка
+Gold Shovel=Золотая Лопата
+Gold Sword=Золотой Меч
+Gold Hoe=Золотая Мотыга
+Gold Axe=Золотой Топор
+Hot gold ingot=Горячий золотой слиток
+Defected gold ingot=Дефектный золотой слиток
+Golden luck=Золотая удача
+Gold=Золото
+
+Gold pickaxe head=Золотой обух кирки
+Gold shovel head=Золотой обух лопаты
+Gold sword head=Золотое лезвие меча
+Gold hoe head=Золотой обух мотыги
+Gold axe head=Золотой обух топора
+Gold tool rod=Золотой стержень инструмента
+Gold tool binding=Золотое крепление инструмента
+
+
+Amethyst Pickaxe=Аметистовая Кирка
+Amethyst Shovel=Аметистовая Лопата
+Amethyst Sword=Аметистовый Меч
+Amethyst Hoe=Аметистовая Мотыга
+Amethyst Axe=Аметистовый Топор
+Shard=Осколки
+Amethyst=Аметист
+
+Amethyst pickaxe head=Аметистовый обух кирки
+Amethyst shovel head=Аметистовый обух лопаты
+Amethyst sword head=Аметистовое лезвие меча
+Amethyst hoe head=Аметистовый обух мотыги
+Amethyst axe head=Аметистовый обух топора
+Amethyst tool rod=Аметистовый стержень инструмента
+Amethyst tool binding=Аметистовое крепление инструмента
+
+
+Apple Pickaxe=Яблоневая Кирка
+Apple Shovel=Яблоневая Лопата
+Apple Sword=Яблоневый Меч
+Apple Hoe=Яблоневая Мотыга
+Apple Axe=Яблоневый Топор
+Picking=Сбор
+Apple=Яблоня
+
+Apple pickaxe head=Яблоневый обух кирки
+Apple shovel head=Яблоневый обух лопаты
+Apple sword head=Яблоневое лезвие меча
+Apple hoe head=Яблоневый обух мотыги
+Apple axe head=Яблоневый обух топора
+Apple tool rod=Яблоневый стержень инструмента
+Apple tool binding=Яблоневое крепление инструмента
+
+
+Berillium Pickaxe=Бериллиевая Кирка
+Berillium Shovel=Бериллиевая Лопата
+Berillium Sword=Бериллиевый Меч
+Berillium Hoe=Бериллиевая Мотыга
+Berillium Axe=Бериллиевый Топор
+Berillium ingot=Слиток бериллия
+Berillium lump=Кусок бериллия
+Hot berillium ingot=Горячий бериллиевый слиток
+Defected berillium ingot=Дефектный бериллиевый слиток
+Fragile=Хрупкость
+Berillium=Бериллий
+
+Berillium pickaxe head=Бериллиевый обух кирки
+Berillium shovel head=Бериллиевый обух лопаты
+Berillium sword head=Бериллиевое лезвие меча
+Berillium hoe head=Бериллиевый обух мотыги
+Berillium axe head=Бериллиевый обух топора
+Berillium tool rod=Бериллиевый стержень инструмента
+Berillium tool binding=Бериллиевое крепление инструмента
+
+
+Ice Pickaxe=Ледяная Кирка
+Ice Shovel=Ледяная Лопата
+Ice Sword=Ледяной Меч
+Ice Hoe=Ледяная Мотыга
+Ice Axe=Ледяной Топор
+Regelation=Регеляция
+Dense Ice Stair=Ступени из плотного льда
+Dense Ice Slab=Плита из плотного льда
+Inner Dense Ice Stair=Внутренние ступени из плотного льда
+Outer Dense Ice Stair=Внешние ступени из плотного льда
+Ice=Лед
+
+Ice pickaxe head=Ледяной обух кирки
+Ice shovel head=Ледяной обух лопаты
+Ice sword head=Ледяное лезвие меча
+Ice hoe head=Ледяной обух мотыги
+Ice axe head=Ледяной обух топора
+Ice tool rod=Ледяной стержень инструмента
+Ice tool binding=Ледяное крепление инструмента
+
+
+Titanium Pickaxe=Титановая Кирка
+Titanium Shovel=Титановая Лопата
+Titanium Sword=Титановый Меч
+Titanium Hoe=Титановая Мотыга
+Titanium Axe=Титановый Топор
+Titanium ingot=Слиток титана
+Titanium block=Титановый блок
+Hot titanium ingot=Горячий титановый слиток
+Defected titanium ingot=Дефектный титановый слиток
+Degradation=Деградация
+Titanium=Титан
+
+Titanium pickaxe head=Титановый обух кирки
+Titanium shovel head=Титановый обух лопаты
+Titanium sword head=Титановое лезвие меча
+Titanium hoe head=Титановый обух мотыги
+Titanium axe head=Титановый обух топора
+Titanium tool rod=Титановый стержень инструмента
+Titanium tool binding=Титановое крепление инструмента
+
+
+Detonar Pickaxe=Детонарная Кирка
+Detonar Shovel=Детонарная Лопата
+Detonar Sword=Детонарный Меч
+Detonar Hoe=Детонарная Мотыга
+Detonar Axe=Детонарный Топор
+Detonar ingot=Детонарный слиток
+Detonar block=Детонарный блок
+Hot detonar ingot=Горячий детонарный слиток
+Defected detonar ingot=Дефектный детонарный слиток
+Explosion=Взрыв
+Detonar=Детонар
+
+Detonar pickaxe head=Детонарный обух кирки
+Detonar shovel head=Детонарный обух лопаты
+Detonar sword head=Детонарное лезвие меча
+Detonar hoe head=Детонарный обух мотыги
+Detonar axe head=Детонарный обух топора
+Detonar tool rod=Детонарный стержень инструмента
+Detonar tool binding=Детонарное крепление инструмента
+
+
+Silver Pickaxe=Серебряная Кирка
+Silver Shovel=Серебряная Лопата
+Silver Sword=Серебряный Меч
+Silver Hoe=Серебряная Мотыга
+Silver Axe=Серебряный Топор
+Hot silver ingot=Горячий серебряный слиток
+Defected silver ingot=Дефектный серебряный слиток
+Holiness=Святость
+Silver=Серебро
+
+Silver pickaxe head=Серебряный обух кирки
+Silver shovel head=Серебряный обух лопаты
+Silver sword head=Серебряное лезвие меча
+Silver hoe head=Серебряный обух мотыги
+Silver axe head=Серебряный обух топора
+Silver tool rod=Серебряный стержень инструмента
+Silver tool binding=Серебряное крепление инструмента
+
+
+Bone Pickaxe=Костяная Кирка
+Bone Shovel=Костяная Лопата
+Bone Sword=Костяной Меч
+Bone Hoe=Костяная Мотыга
+Bone Axe=Костяной Топор
+Serration=Зазубренность
+Сultivation=Выращивание
+Bone=Кость
+
+Bone pickaxe head=Костяной обух кирки
+Bone shovel head=Костяной обух лопаты
+Bone sword head=Костяное лезвие меча
+Bone hoe head=Костяной обух мотыги
+Bone axe head=Костяной обух топора
+Bone tool rod=Костяной стержень инструмента
+Bone tool binding=Костяное крепление инструмента
+
+Property:=Свойство:
+ Attack Damage= Атакующего урона
+
+Berillium block=Бериллиевый блок
+Berillium Ore=Бериллиевая Руда
+
+Dense ice=Плотный лед
+Melting furnace=Плавильная печь
+Anvil=Наковальня
+
+#Книга
+Introduction=Введение
+Materials=Материалы
+Metals=Металлы
+Non-metals=Неметаллы
+Materials from Moreores=Материалы из Moreores
+Materials from Bonemeal=Материалы из Bonemeal
+The Blacksmith's Handbook=Справочник кузнеца
+About working with blacksmithing=О работе с кузнечным делом
+
+Wreckage is a mod where you become a blacksmith. You'll have to work with various resources: wood, steel, gold, and you'll have to combine them to find the best tool for you!=Wreckage - мод, в котором Вы станете кузнецом. Вам придётся работать с разными видами ресурс: дерево, сталь, золото, придётся комбинировать и искать самый подходящий для Вас вариант инструмента!
+The main idea of the mod is to implement a variety of gameplay in terms of creating multifunctional tools.=Основная мысль мода заключается в идеи реализации разнообразия гемплея в плане создания многофункциональных инструментов.
+The main place where tool parts originate is the anvil. Every time you create a new piece of a future tool, you gain experience in blacksmithing.=Основное место, где зарождаются части инструментов, - наковальня. Каждый раз, когда Вы создаёте новую часть будущего инструмента, Вы набираетесь опытом, опытом мастерства кузнечного дела.
+Tinker's Construct, Axistools and Simple anvil served as the basis for creating this mod.=Основой для создания этого мода послужили Tinker's Construct, Axistools и Simple anvil.
+
+
+
+Iron is a metal whose rocks are among the most common materials in the cubic world. Due to quenching, it acquires hardness.=Железо - это металл, породы которых являются одними из самых распространённых материалов в кубическом мире. За счёт закалки обретает твёрдость.
+Property - Strengthening (increases strength by 10 units). Suitable for all tools=Свойство - Укрепление(повышает прочность на 10 ед). Подходит для всех инструментов
+
+Gold is a metal that has a strange property in which the resources it mines drop more than other types of materials.=Золото - это металл, который имеет странное свойство, в котором добываемые им ресурсы выпадают больше, чем по сравнению с другими видами материалов.
+Property - Golden Luck (3% chance of dropping extra loot). Suitable for all tools except hoe.=Свойство - Золотая удача(3%шанс выпадения доп лута). Подходит для всех инструментов, кроме мотыги.
+
+Berillium is a metal whose rocks are rare but valuable materials. It's hard, but brittle.=Бериллий - это металл, породы которого являются редкими, но ценными материалами. Он твердый, но хрупкий.
+Property - Fragility (there is some chance of losing additional strength during use). Suitable for all tools.=Свойство - Хрупкость(есть некоторый шанс потерять доп прочность при использовании). Подходит для всех инструментов.
+Method of obtaining - Mining.=Способ получения - Добывается в шахте.
+
+Titanium is a material that is depleted from constant use.=Титан - материал, который истощается от постоянного использования.
+Property - Degradation(the more wear and tear a tool has, the slower it mines). Suitable only for picks, shovels and axes.=Свойство - Деградация(чем больше износ инструмента, тем медленнее он добывает). Подходит только для кирок, лопат и топоров.
+The method of production is created in a melting furnace.=Способ получения - Создание в плавильной печи.
+
+A detonar is a material that is unstable in its origin.=Детонар - материал, который нестабилен по своему происхождению.
+Property - Explosion(When the block is broken, it produces an explosion, which depends on the amount of it in the tool.) Suitable for all tools.=Свойство - Взрыв(При ломании блока производит взрыв, который зависит от количества его в инструменте.) Подходит для всех инструментов.
+Method of obtaining - Detonate the berillium block.=Способ получения - Взорвать блок бериллия.
+
+Wood is a material that is fused with similar objects using a special technique, which allows you to spend less money on repairing tools.=Дерево - материал, который особой методикой сращивается с собой подобными предметами, что позволяет меньше тратиться на починку инструментов.
+Property - Cheap (less materials to repair). Suitable for all tools.=Свойство - Дешевизна(меньше материалов для починки). Подходит для всех инструментов.
+
+Stone is an available material at the initial stage. It is a relatively hard rock found everywhere.=Камень - доступный материал на начальном этапе. Относительно крепкая порода, встречающаяся везде.
+Property - Stoneborn(5% chance to mine additional stone). Suitable for pickaxe only.=Свойство - Камнерожденный(5% шанс добыть дополнительный камень). Подходит только для кирки.
+
+Dense ice is a material that has greater strength due to compression.=Плотный лед - материал, обладающий большей прочностью благодаря сжатию.
+Property - Regelation (5% chance to restore the tool's strength). Suitable for all tools except hoe.=Свойство - Регеляция(5% шанс восстановить прочность инструмента). Подходит для всех инструментов, кроме мотыги.
+Method of obtaining - created in the workbench from 9 ordinary ice=Способ получения - создается в верстаке из 9 обычного льда
+
+Silver is a precious metal of white color, objects of which affect the evil in a special way.=Серебро - это драгоценный металл белого цвета, предметы из которого воздействует на нечисть особым способом.
+Property - Holiness(Increased damage against monsters). Suitable for sword only.=Свойство - Святость(Повышенный урон против монстров). Подходит только для меча.
+
+Mythril is a fantasy metal known for its super strength and lightness that can enhance the properties of other materials.=Мифрил - это фэнтезийный металл, известный своей сверхпрочностью и легкостью, который способен усиливать свойства других материалов.
+Property - Mythical (able to enhance the properties of other materials). Suitable for all tools.=Свойство - Мифический(способен усилять свойства других материалов). Подходит для всех инструментов.
+
+An apple tree is a material that can find an apple in any foliage.=Яблоневое дерево - материал, который может найти яблоко в любой листве.
+Property - Picking (10% chance of an apple falling out when harvesting foliage).=Свойство - Сбор(10% шанс выпадения яблока при добыче листвы).
+
+Amethyst is a material that can be found in geodes.=Аметист - материал, который можно найти в жеодах.
+Property - Shards (with a certain chance, crystals will drop from certain blocks, which can be used to modify the tools).=Свойство - Осколки(с некоторым шансом с определенных блоков будут выпадать кристаллы, которые можно использовать для модификации инструментов).
+Iron Ore -> Hematite=Железная руда -> Гематит
+Ores -> Carnelian=Руды -> Сердолик
+Tree -> Peridot=Дерево -> Перидот
+
+Bone is a material that becomes sharper over time, allowing you to deal more damage. The hoe has an alternative use in the form of bone meal.=Кость - материал, который со временем становится острее, что позволяет наносить больше урона. Мотыга имеет альтернативное использование в виде костной муки.
+Property - Serrated (the more wear and tear on the tool, the more damage). Only suitable for swords.=Свойство - Зазубренность(чем больше износ инструмента, тем больше урона). Подходит только для меча. 
+Property - Cultivation (accelerates the growth of vegetation). Suitable only for hoe.=Свойство - Выращивание(ускоряет рост растительности). Подходит только для мотыги.
+
+
+
+The workplace where the main tasks take place: creation, repair and modification of tools. Parts of the tools are created using hot ingots. The first slot is used for hot ingots and tools, the second for modifiers and repair materials.=Рабочее место, где происходят главные задачи: создание, починка и модификаций инструментов. Части инструментов создаются с помощью горячих слитков. Первый слот используется для горячих слитков и инструментов, второй - модификаторов и материалов для ремонта.
+
+To repair the tool, you need to put it in the first slot, and put the repair item in the modifier slot.=Чтобы отремонтировать инструмент нужно его положить в первый слот, в слот модификаторов кладем предмет для починки.
+No defects are guaranteed during the repair of tools.=При ремонте инструментов гарантируется отсутствие дефектов.
+Modifications=Модификации
+To modify the tool, you need to put it in the first slot, put the modifier in the modifier slot.=Чтобы модифицировать инструмент нужно его положить в первый слот, в слот модификаторов кладем модификатор.
+
+Brick floor=Кирпичный пол
+If you put an anvil on the ground, you can't make normal tool parts, only defective ingots will be created.=Если поставить наковальню на землю, сделать нормальные части инструментов не получится, будут создаваться только бракованные слитки.
+Defective ingot=Бракованный слиток
+Due to trying to create parts under unfavorable conditions or with little experience, defective ingots will be created. These can be remelted and part of the ingot can be reclaimed.=Из-за попытки создания деталей в неблагоприятных условиях или с малым опытом будут создаваться бракованные слитки. Их можно переплавить и получить часть слитка обратно.
+Blacksmith experience=Опыт кузнеца
+The anvil interface has an experience bar. When creating parts, the character will accumulate experience. The more experienced the blacksmith is, the less chance to create defective ingots. The maximum level is 10.=В интерфейсе наковальни есть шкала опыта. При создании деталей персонаж будет копить опыт. Чем опытнее кузнец, тем меньше шанс создать бракованные слитки. Максимальный уровень - 10.
+
+
+A special block designed to create alloys from two hot ingots. This process allows players to combine different metals and create new materials with unique properties.=Специальный блок, предназначенный для создания сплавов из двух горячих слитков. Этот процесс позволяет игрокам комбинировать различные металлы и создавать новые материалы с уникальными свойствами.
+Features:=Особенности:
+-The melting furnace can only process hot ingots.=-Плавильная печь может обрабатывать только горячие слитки.
+-If there is lava under the melting furnace, the processing speed increases.=-Если под плавильной печью есть лава скорость обработки увеличивается.
+
+Titanium is created from 2 hot steel ingots and coal.=Титан создается из 2 горячих стальных слитков и угля.
+
+
+Hematite adds speed to the use of tools.=Гематит добавляет скорость использования инструментов.
+Features:=Особенности:
+-Increases the speed of block mining and the speed of sword strikes,=-Повышает скорость добычи блоков и скорость ударов у меча,
+-20 levels,=-20 уровней,
+-The method of obtaining it is given with a 70% chance when mining iron ore with an amethyst pickaxe.=-Способ получения - выпадает с 70% шансом при добыче железной руды аметистовой киркой.
+
+The diamond adds strength to the tool, strengthening the shoe.=Алмаз добавляет прочность инструменту, укрепляя обух.
+-Increases the strength of the tool by 500 units,=-Повышает прочность инструмента на 500 единиц,
+-One-time use.=-Одноразовое.
+-One-time use,=-Одноразовое,
+
+Carnelian - orange colored crystals, which will allow you to dig out the entire accumulation of ore in one go.=Сердолик - кристаллы оранжевого цвета, которые позволят вам выкопать все скопление руды за один раз.
+-When mining one block of ore, the remaining blocks in the vein will be mined,=-При добыче одного блока руды будут добыты остальные блоки в жиле,
+-The method of obtaining it is given with a 1% chance when mining any ore with an amethyst pickaxe.=-Способ получения - выпадает с  шансом в 1% при добыче любой руды аметистовой киркой.
+
+Peridot is a green crystal that will allow you to cut down the entire tree in one go.=Перидот - кристалл зеленого цвета, которая позволит вам вырубать все дерево за один раз.
+-When one block of wood is extracted, the entire tree will be extracted,=-При добыче одного блока древесины будет добыто все дерево,
+-The method of obtaining it is given with a 1% chance when extracting any wood with an amethyst axe.=-Способ получения - выпадает с  шансом в 1% при добыче любой древесины аметистовым топором.
+
+
+Instruments=Инструменты
+The game features five different tools: a pickaxe, an axe, a shovel, a sword, and a hoe. All of them are created on a workbench from a butt, a mount and a rod. The tools can be modified using five different modifiers.=В игре представлено пять различных инструментов: кирка, топор, лопата, меч и мотыга. Все они создаются на верстаке из обуха, крепления и стержня. Инструменты можно модифицировать с помощью пяти различных модификаторов.
+In order not to lose the modified tool, it is possible to repair it, even if it is broken. For routine repairs, the material from which the shoe is made is required, and to repair a broken tool, a special tool is needed - a hammer for repair.=Чтобы не потерять модифицированный инструмент, предусмотрена возможность его починки, даже если он сломался. Для обычного ремонта требуется материал, из которого изготовлен обух, а для восстановления сломанного инструмента необходим специальный инструмент - молот для починки.
+
+
+
+Repair=Ремонт
+Crafts=Крафты
+Modifications=Модификаторы
+Strength=Прочность
+Mining level=Уровень добычи
+Damage=Урон
+Method of obtaining=Способ получения
+Hematite=Гематит
+Carnelian=Сердолик
+Peridot=Перидот
+Diamond=Алмаз
+Broken=Сломанный
+Hammer for repair=Молот для ремонта
+
+Hematite block=Блок гематита
+Carnelian block=Блок сердолика
+Peridot block=Блок перидота
