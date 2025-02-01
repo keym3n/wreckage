@@ -75,7 +75,7 @@ function register_unique_craft(craft_def)
     registered_recipes[recipe_key] = true  -- Помечаем рецепт как зарегистрированный
   end
 end
-local function make_piece(mat, rmat, hex, cooldown, sworddamage, snappy, choppy, cracky, crumbly, attributes)
+local function make_piece(number, mat, rmat, hex, cooldown, sworddamage, snappy, choppy, cracky, crumbly, attributes)
 	local full_mat = 'wreckage:' .. mat;
   for part,amount in pairs(piece) do
     local m_mat = mat:gsub("_ingot", "")
@@ -122,7 +122,8 @@ local function make_piece(mat, rmat, hex, cooldown, sworddamage, snappy, choppy,
       sworddamage=sworddamage,
       rmat = rmat,
       hexx = hex,
-      part = part
+      part = part,
+      number = number
   	});
 
 		if string.find(part, "pickaxe") then
@@ -173,7 +174,7 @@ local function tableHasKey(table, key)
 end
 
 
-make_piece("steel_ingot",'default:steel_ingot','#9191ab', 0.9, 6, --do  ababab
+make_piece(1, "steel_ingot",'default:steel_ingot','#9191ab', 0.9, 6, --do  ababab
   {times={[1]=2.5, [2]=1.20, [3]=0.35}, uses=30, maxlevel=2}, -- snappy
 	{times={[1]=2.50, [2]=1.40, [3]=1.00}, uses=30, maxlevel=2}, -- choppy
 	{times={[1]=4.00, [2]=1.60, [3]=0.80}, uses=30, maxlevel=2}, -- cracky 
@@ -187,7 +188,7 @@ make_piece("steel_ingot",'default:steel_ingot','#9191ab', 0.9, 6, --do  ababab
 			end]]
 		}
 	});
-make_piece("gold_ingot",'default:gold_ingot',"#e5ce00", 1.2, 2,--do
+make_piece(2, "gold_ingot",'default:gold_ingot',"#e5ce00", 1.2, 2,--do
   {times={[2]=1.6, [3]=0.40}, uses=10, maxlevel=1}, -- snappy
 	{times={[2]=3.00, [3]=1.60}, uses=10, maxlevel=1}, -- choppy
 	{times={[3]=1.60}, uses=5, maxlevel=1}, -- cracky
@@ -229,7 +230,7 @@ make_piece("gold_ingot",'default:gold_ingot',"#e5ce00", 1.2, 2,--do
       end]]
     }
 }); --e5ce00d0 fafa00
-make_piece("stone",'default:cobble','#555555',1.1, 4,--555555df
+make_piece(3, "stone",'default:cobble','#555555',1.1, 4,--555555df
   {times={[2]=1.4, [3]=0.40}, uses=20, maxlevel=1}, -- snappy
 	{times={[1]=3.00, [2]=2.00, [3]=1.30}, uses=20, maxlevel=1}, -- choppy
 	{times={[2]=2.0, [3]=1.00}, uses=20, maxlevel=1}, -- cracky
@@ -250,7 +251,7 @@ make_piece("stone",'default:cobble','#555555',1.1, 4,--555555df
 		}
 	});
 
-make_piece("wood","group:wood","#775208", 1.2, 2, --d0
+make_piece(4, "wood","group:wood","#775208", 1.2, 2, --d0
   {times={[2]=1.6, [3]=0.40}, uses=10, maxlevel=1}, -- snappy
 	{times={[2]=3.00, [3]=1.60}, uses=10, maxlevel=1}, -- choppy
 	{times={[3]=1.60}, uses=10, maxlevel=1}, -- cracky
@@ -263,7 +264,7 @@ make_piece("wood","group:wood","#775208", 1.2, 2, --d0
 			end]]
 		}
 	});
-make_piece("apple","default:tree","#7e6030", 1.2, 2, --d0
+make_piece(5, "apple","default:tree","#7e6030", 1.2, 2, --d0
   {times={[2]=1.6, [3]=0.40}, uses=10, maxlevel=1}, -- snappy
 	{times={[2]=3.00, [3]=1.60}, uses=10, maxlevel=1}, -- choppy
 	{times={[3]=1.60}, uses=10, maxlevel=1}, -- cracky
@@ -281,7 +282,7 @@ make_piece("apple","default:tree","#7e6030", 1.2, 2, --d0
 			end]]
 		}
 	});
-make_piece('ice','wreckage:dense_ice','#71abf2', 0.8, 4, --d2
+make_piece(6, 'ice','wreckage:dense_ice','#71abf2', 0.8, 4, --d2
   {times={[2]=1.30, [3]=0.375}, uses=25, maxlevel=1}, -- snappy 
   {times={[1]=2.75, [2]=1.70, [3]=1.15}, uses=25, maxlevel=1}, -- choppy
   {times={[2]=1.80, [3]=0.90}, uses=25, maxlevel=1}, -- cracky 
@@ -310,6 +311,7 @@ make_piece('ice','wreckage:dense_ice','#71abf2', 0.8, 4, --d2
 					local item = puncher:get_wielded_item()
 					local current_wear = item:get_wear()
 					local wear_to_deduct = math.floor(current_wear * 0.1)
+
 					item:set_wear(math.max(0, current_wear - wear_to_deduct))
 					puncher:set_wielded_item(item)
 					
@@ -317,7 +319,7 @@ make_piece('ice','wreckage:dense_ice','#71abf2', 0.8, 4, --d2
 			end]]
 		}
 	});
-make_piece("berillium_ingot",'wreckage:berillium_ingot','#20e4e4', 0.8, 6,--d2
+make_piece(7, "berillium_ingot",'wreckage:berillium_ingot','#20e4e4', 0.8, 6,--d2
    {times={[1]=1.44, [2]=0.653}, uses=52, maxlevel=2}, -- snappy
    {times={[1]=1.913, [2]=0.833, [3]=0.653}, uses=52, maxlevel=2}, -- choppy
    {times={[1]=1.733, [2]=0.608, [3]=0.35}, uses=52, maxlevel=2}, -- cracky 
@@ -331,7 +333,11 @@ make_piece("berillium_ingot",'wreckage:berillium_ingot','#20e4e4', 0.8, 6,--d2
 					local item = digger:get_wielded_item()
 					local current_wear = item:get_wear()
 					local wear_to_deduct = math.floor(current_wear * 0.05)
-					item:set_wear(math.max(0, current_wear + wear_to_deduct))
+					local last_wear = current_wear + wear_to_deduct
+					if last_wear >= 65530 then
+						last_wear = 65530
+					end
+					item:set_wear(math.max(0, last_wear))
 					digger:set_wielded_item(item)
 					
 				end
@@ -346,7 +352,11 @@ make_piece("berillium_ingot",'wreckage:berillium_ingot','#20e4e4', 0.8, 6,--d2
 					local item = puncher:get_wielded_item()
 					local current_wear = item:get_wear()
 					local wear_to_deduct = math.floor(current_wear * 0.05)
-					item:set_wear(math.max(0, current_wear + wear_to_deduct))
+					local last_wear = current_wear + wear_to_deduct
+					if last_wear >= 65530 then
+						last_wear = 65530
+					end
+					item:set_wear(math.max(0, last_wear))
 					puncher:set_wielded_item(item)
 					
 				end
@@ -359,13 +369,17 @@ make_piece("berillium_ingot",'wreckage:berillium_ingot','#20e4e4', 0.8, 6,--d2
 				if math.random(1, 100) <= 5/up*level  then
   				local current_wear = itemstack:get_wear()
 					local wear_to_deduct = math.floor(current_wear * 0.05)
-					itemstack:set_wear(math.max(0, current_wear + wear_to_deduct))
+					local last_wear = current_wear + wear_to_deduct
+					if last_wear >= 65530 then
+						last_wear = 65530
+					end
+					itemstack:set_wear(math.max(0, last_wear))
 					--itemstack:add_wear_by_uses(uses*0.9*up)
 				end
 			end]]
 			}
 	});
-make_piece("titanium_ingot","wreckage:titanium_ingot","#013220",0.45, 9,--d0
+make_piece(8, "titanium_ingot","wreckage:titanium_ingot","#013220",0.45, 9,--d0
    {times={[1]=1.60, [2]=0.725}, uses=48, maxlevel=2}, -- snappy
    {times={[1]=2.125, [2]=0.925, [3]=0.725}, uses=48, maxlevel=2}, -- choppy
    {times={[1]=1.925, [2]=0.675, [3]=0.35}, uses=48, maxlevel=2}, -- cracky 
@@ -411,7 +425,7 @@ make_piece("titanium_ingot","wreckage:titanium_ingot","#013220",0.45, 9,--d0
   			end]]
   		}
   	});
-make_piece("detonar_ingot",'wreckage:detonar_ingot','#cc1000', 0.9, 6, --do
+make_piece(9, "detonar_ingot",'wreckage:detonar_ingot','#cc1000', 0.9, 6, --do
   {times={[1]=2.5, [2]=1.20, [3]=0.35}, uses=30, maxlevel=2}, -- snappy
 	{times={[1]=2.50, [2]=1.40, [3]=1.00}, uses=30, maxlevel=2}, -- choppy
 	{times={[1]=4.00, [2]=1.60, [3]=0.80}, uses=30, maxlevel=2}, -- cracky 
@@ -439,8 +453,9 @@ make_piece("detonar_ingot",'wreckage:detonar_ingot','#cc1000', 0.9, 6, --do
 			end]]
 		}
 	});
+	
 if minetest.get_modpath("amethyst_new") then
-  make_piece("amethyst",'amethyst_new:amethyst','#b38ef3', 0.9, 6, --do  ababab
+  make_piece(10, "amethyst",'amethyst_new:amethyst','#b38ef3', 0.9, 6, --do  ababab
     {times={[1]=2.5, [2]=1.20, [3]=0.35}, uses=30, maxlevel=2}, -- snappy
   	{times={[1]=2.50, [2]=1.40, [3]=1.00}, uses=30, maxlevel=2}, -- choppy
   	{times={[1]=4.00, [2]=1.60, [3]=0.80}, uses=30, maxlevel=2}, -- cracky 
@@ -474,7 +489,7 @@ if minetest.get_modpath("amethyst_new") then
   	});
 end
 if minetest.get_modpath("moreores") then
-  make_piece("silver_ingot","moreores:silver_ingot","#Dddddd",1.0,6, --d0
+  make_piece(11, "silver_ingot","moreores:silver_ingot","#Dddddd",1.0,6, --d0
   	{times={[1]=2.5, [2]=1.20, [3]=0.35}, uses = 27, maxlevel= 1}, -- snappy
   	{times={[1]=2.50, [2]=1.40, [3]=1.00}, uses = 27, maxlevel= 1}, -- choppy
   	{times={[1]=4.00, [2]=1.60, [3]=0.80}, uses = 27, maxlevel= 1}, -- cracky 
@@ -498,7 +513,7 @@ if minetest.get_modpath("moreores") then
   			end]]
   		}
   })
-  make_piece("mithril_ingot","moreores:mithril_ingot","#5622e6",0.45, 9,--d0
+  make_piece(12, "mithril_ingot","moreores:mithril_ingot","#5622e6",0.45, 9,--d0
   	{times = {[2] = 0.70, [3] = 0.25}, uses = 66, maxlevel= 2}, -- snappy
   	{times = {[1] = 1.75, [2] = 0.45, [3] = 0.45}, uses = 66, maxlevel= 2}, -- choppy
   	{times = {[1] = 2.25, [2] = 0.55, [3] = 0.35}, uses = 66, maxlevel= 2}, -- cracky 
@@ -522,7 +537,7 @@ if minetest.get_modpath("moreores") then
   	})
 end
 if minetest.get_modpath("bonemeal") then
-	make_piece("bone","bonemeal:bone","#f2e8c9",1.0,6, --d0
+	make_piece(13, "bone","bonemeal:bone","#f2e8c9",1.0,6, --d0
   	{times={[2]=1.30, [3]=0.375}, uses=20, maxlevel=1}, -- snappy 
 	  {times={[1]=2.75, [2]=1.70, [3]=1.15}, uses=20, maxlevel=1}, -- choppy
 	  {times={[2]=1.80, [3]=0.90}, uses=20, maxlevel=1}, -- cracky 
@@ -734,7 +749,7 @@ for _, headp in ipairs(pickhead) do
     for ___, rodp in ipairs(rod) do
     	local head_def, binding_def, rod_def, attrlist, attrpt, durable, up = attributes_func(headp, binding, rodp, "pick", "all")
       local usees = math.floor(((head_def.cracky.uses * 0.45)+((binding_def.cracky.uses/2) * 0.35)+((rod_def.cracky.uses/3)*0.2)) / 0.33)+math.floor(durable*up) 
-      minetest.register_tool("wreckage:tool_pick_".._.."_"..__.."_"..___, {
+      minetest.register_tool("wreckage:tool_pick_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number, {
         description = createDescription(attrpt,headp, " Pickaxe", binding, rodp, usees),
         inventory_image = "("..get_image(rod_def)..")^("..get_image(head_def)..")^("..get_image(binding_def, head_def)..")",
         tool_capabilities = {
@@ -756,7 +771,7 @@ for _, headp in ipairs(pickhead) do
       })
       
       minetest.register_craft({
-        output = "wreckage:tool_pick_".._.."_"..__.."_"..___,
+        output = "wreckage:tool_pick_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
         recipe = {
           {headp},
           {binding},
@@ -764,15 +779,15 @@ for _, headp in ipairs(pickhead) do
         },
       });
       tinker.register_recipe({
-        output = "wreckage:tool_pick_".._.."_"..__.."_"..___,
+        output = "wreckage:tool_pick_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
         modifi = head_def.rmat,
-        input ="wreckage:tool_pick_".._.."_"..__.."_"..___,
+        input ="wreckage:tool_pick_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
       });
       for item, item1 in pairs(modification_list) do
       	tinker.register_recipe({
-	        output = "wreckage:tool_pick_".._.."_"..__.."_"..___,
+	        output = "wreckage:tool_pick_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
 	        modifi = item,
-	        input ="wreckage:tool_pick_".._.."_"..__.."_"..___,
+	        input ="wreckage:tool_pick_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
 	      })
       end
     end
@@ -808,7 +823,7 @@ for _, headp in ipairs(axehead) do
     for ___, rodp in ipairs(rod) do
 			local head_def, binding_def, rod_def, attrlist, attrpt, durable, up = attributes_func(headp, binding, rodp, "axe", "all")
       local usees = math.floor(((head_def.choppy.uses * 0.45)+((binding_def.choppy.uses/2) * 0.35)+((rod_def.choppy.uses/3)*0.2)) / 0.33)+math.floor(durable*up) 
-      minetest.register_tool("wreckage:tool_axe_".._.."_"..__.."_"..___, {
+      minetest.register_tool("wreckage:tool_axe_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number, {
 				description = createDescription(attrpt,headp, " Axe", binding, rodp, usees),
         inventory_image = "("..get_image(rod_def)..")^("..get_image(head_def)..")^("..get_image(binding_def, head_def)..")",
 				tool_capabilities = {
@@ -830,7 +845,7 @@ for _, headp in ipairs(axehead) do
 			})
     
       minetest.register_craft({
-        output = "wreckage:tool_axe_".._.."_"..__.."_"..___,
+        output = "wreckage:tool_axe_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
         recipe = {
           {'', headp, ''},
           {'', binding, ''},
@@ -838,15 +853,15 @@ for _, headp in ipairs(axehead) do
         },
       });
       tinker.register_recipe({
-        output = "wreckage:tool_axe_".._.."_"..__.."_"..___,
+        output = "wreckage:tool_axe_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
         modifi = head_def.rmat,
-        input ="wreckage:tool_axe_".._.."_"..__.."_"..___,
+        input ="wreckage:tool_axe_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
       })
       for item, item1 in pairs(modification_list) do
       	tinker.register_recipe({
-	        output = "wreckage:tool_axe_".._.."_"..__.."_"..___,
+	        output = "wreckage:tool_axe_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
 	        modifi = item,
-	        input ="wreckage:tool_axe_".._.."_"..__.."_"..___,
+	        input ="wreckage:tool_axe_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
 	      })
       end
     end 
@@ -882,7 +897,7 @@ for _, headp in ipairs(shohead) do
     for ___, rodp in ipairs(rod) do
 			local head_def, binding_def, rod_def, attrlist, attrpt, durable, up = attributes_func(headp, binding, rodp, "shovel", "all")
       local usees = math.floor((((head_def.crumbly.uses/2) * 0.4)+((binding_def.crumbly.uses/2) * 0.4)+((rod_def.crumbly.uses/3)*0.2)) / 0.33)+math.floor(durable*up) 
-      minetest.register_tool("wreckage:tool_shovel_".._.."_"..__.."_"..___, {
+      minetest.register_tool("wreckage:tool_shovel_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number, {
 				description = createDescription(attrpt,headp," Shovel", binding, rodp, usees),
 				inventory_image = "("..get_image(rod_def)..")^("..get_image(head_def)..")^("..get_image(binding_def, head_def)..")",
 				tool_capabilities = {
@@ -903,7 +918,7 @@ for _, headp in ipairs(shohead) do
 				up = up,
 			})
       minetest.register_craft({
-        output = "wreckage:tool_shovel_".._.."_"..__.."_"..___,
+        output = "wreckage:tool_shovel_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
         recipe = {
           {'', headp, ''},
           {'', binding, ''},
@@ -911,15 +926,15 @@ for _, headp in ipairs(shohead) do
         },
       });
       tinker.register_recipe({
-        output = "wreckage:tool_shovel_".._.."_"..__.."_"..___,
+        output = "wreckage:tool_shovel_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
         modifi = head_def.rmat,
-        input ="wreckage:tool_shovel_".._.."_"..__.."_"..___,
+        input ="wreckage:tool_shovel_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
       })
       for item, item1 in pairs(modification_list) do
       	tinker.register_recipe({
-	        output = "wreckage:tool_shovel_".._.."_"..__.."_"..___,
+	        output = "wreckage:tool_shovel_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
 	        modifi = item,
-	        input ="wreckage:tool_shovel_".._.."_"..__.."_"..___,
+	        input ="wreckage:tool_shovel_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
 	      })
       end
     end 
@@ -956,7 +971,7 @@ for _, headp in ipairs(sworhead) do
     for ___, rodp in ipairs(rod) do
 			local head_def, binding_def, rod_def, attrlist, attrpt, durable, up = attributes_func(headp, binding, rodp, "sword", "")
       local usees = math.floor(((head_def.snappy.uses * 0.6)+((binding_def.snappy.uses/3) * 0.2)+((rod_def.snappy.uses/3)*0.2)) / 0.33)+math.floor(durable*up) 
-      minetest.register_tool("wreckage:tool_sword_".._.."_"..__.."_"..___, {
+      minetest.register_tool("wreckage:tool_sword_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number, {
 				description = createDescription(attrpt,headp," Sword", binding, rodp , "+"..head_def.sworddamage..S(" Attack Damage").."\n" .. usees),
 				inventory_image = "("..get_image(rod_def)..")^("..get_image(head_def)..")^("..get_image(binding_def, head_def)..")",
 				tool_capabilities = {
@@ -977,7 +992,7 @@ for _, headp in ipairs(sworhead) do
 				up = up,
 			})
       minetest.register_craft({
-        output = "wreckage:tool_sword_".._.."_"..__.."_"..___,
+        output = "wreckage:tool_sword_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
         recipe = {
           {'', headp, ''},
           {'', binding, ''},
@@ -985,15 +1000,15 @@ for _, headp in ipairs(sworhead) do
         },
       });
       tinker.register_recipe({
-        output = "wreckage:tool_sword_".._.."_"..__.."_"..___,
+        output = "wreckage:tool_sword_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
         modifi = head_def.rmat,
-        input ="wreckage:tool_sword_".._.."_"..__.."_"..___,
+        input ="wreckage:tool_sword_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
       })
       for item, item1 in pairs(modification_list) do
       	tinker.register_recipe({
-	        output = "wreckage:tool_sword_".._.."_"..__.."_"..___,
+	        output = "wreckage:tool_sword_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
 	        modifi = item,
-	        input ="wreckage:tool_sword_".._.."_"..__.."_"..___,
+	        input ="wreckage:tool_sword_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
 	      })
       end
     end 
@@ -1094,7 +1109,7 @@ for _, headp in ipairs(hoehead) do
     for ___, rodp in ipairs(rod) do
 			local head_def, binding_def, rod_def, attrlist, attrpt, durable, up = attributes_func(headp, binding, rodp, "hoe", "")
 			local usees = math.floor((((head_def.snappy.uses/3) * 0.2)+((binding_def.snappy.uses/2) * 0.6)+((rod_def.snappy.uses/3)*0.2)) / 0.33)+math.floor(durable*up) 
-      minetest.register_tool("wreckage:tool_hoe_".._.."_"..__.."_"..___, {
+      minetest.register_tool("wreckage:tool_hoe_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number, {
         description = createDescription(attrpt,headp," Hoe", binding, rodp, usees),
         inventory_image = "("..get_image(rod_def)..")^("..get_image(head_def)..")^("..get_image(binding_def, head_def)..")",  
        -- on_use =  
@@ -1119,7 +1134,7 @@ for _, headp in ipairs(hoehead) do
         sound = {breaks = "default_tool_breaks"},
       })
       minetest.register_craft({
-        output = "wreckage:tool_hoe_".._.."_"..__.."_"..___,
+        output = "wreckage:tool_hoe_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
         recipe = {
           {'', headp, ''},
           {'', binding, ''},
@@ -1127,15 +1142,15 @@ for _, headp in ipairs(hoehead) do
         },
       });
       tinker.register_recipe({
-        output = "wreckage:tool_hoe_".._.."_"..__.."_"..___,
+        output = "wreckage:tool_hoe_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
         modifi = head_def.rmat,
-        input ="wreckage:tool_hoe_".._.."_"..__.."_"..___,
+        input ="wreckage:tool_hoe_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
       })
       for item, item1 in pairs(modification_list) do
       	tinker.register_recipe({
-	        output = "wreckage:tool_hoe_".._.."_"..__.."_"..___,
+	        output = "wreckage:tool_hoe_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
 	        modifi = item,
-	        input ="wreckage:tool_hoe_".._.."_"..__.."_"..___,
+	        input ="wreckage:tool_hoe_"..head_def.number.."_"..binding_def.number.."_"..rod_def.number,
 	      })
       end
     end 
