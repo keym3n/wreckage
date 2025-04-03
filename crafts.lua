@@ -5,36 +5,47 @@ dofile(modpath.. "/melting_furnace.lua")
 
 
 
-minetest.register_craft({
-	output = "wreckage:wood_pickaxe_head",
-	recipe = {
-		{"stairs:slab_aspen_wood", "group:wood", "stairs:slab_aspen_wood"},
-	}
-})
-minetest.register_craft({
-	output = "wreckage:wood_pickaxe_head",
-	recipe = {
-		{"stairs:slab_acacia_wood", "group:wood", "stairs:slab_acacia_wood"},
-	}
-})
-minetest.register_craft({
-	output = "wreckage:wood_pickaxe_head",
-	recipe = {
-		{"stairs:slab_pine_wood", "group:wood", "stairs:slab_pine_wood"},
-	}
-})
-minetest.register_craft({
-	output = "wreckage:wood_pickaxe_head",
-	recipe = {
-		{"stairs:slab_wood", "group:wood", "stairs:slab_wood"},
-	}
-})
-minetest.register_craft({
-	output = "wreckage:wood_pickaxe_head",
-	recipe = {
-		{"stairs:slab_junglewood", "group:wood", "stairs:slab_junglewood"},
-	}
-})
+local group_tab = {}
+
+for name, def in pairs(minetest.registered_nodes) do
+    if def.groups and def.groups["wood"] then
+        table.insert(group_tab, name)
+    end
+end
+for name, def in pairs(minetest.registered_nodes) do
+    for _, wname in ipairs(group_tab) do
+      if name:find("slab") and name:find(wname:match(":(.+)$")) then
+        minetest.register_craft({
+  	output = "wreckage:wood_pickaxe_head",
+  	recipe = {
+  		{name, "group:wood", name},
+  	}
+  })
+  minetest.register_craft({
+  	output = "wreckage:wood_tool_binding",
+  	recipe = {
+  		{name, "", name},
+  		{"",name,""},
+  		{name, "", name},
+  	}
+  })
+  minetest.register_craft({
+  	output = "wreckage:wood_shovel_head",
+  	recipe = {
+  		{"stairs:slab_"..name},
+  	}
+  })
+  minetest.register_craft({
+  	output = "wreckage:wood_sword_head",
+  	recipe = {
+  		{name},
+  		{"group:wood"},
+  	}
+  })
+      end
+    end
+end
+
 minetest.register_craft({
 	output = "wreckage:wood_tool_rod",
 	recipe = {
@@ -42,46 +53,7 @@ minetest.register_craft({
 		{"group:wood"},
 	}
 })
-minetest.register_craft({
-	output = "wreckage:wood_tool_binding",
-	recipe = {
-		{"stairs:slab_pine_wood", "", "stairs:slab_pine_wood"},
-		{"","stairs:slab_pine_wood",""},
-		{"stairs:slab_pine_wood", "", "stairs:slab_pine_wood"},
-	}
-})
-minetest.register_craft({
-	output = "wreckage:wood_tool_binding",
-	recipe = {
-		{"stairs:slab_aspen_wood", "", "stairs:slab_aspen_wood"},
-		{"","stairs:slab_aspen_wood",""},
-		{"stairs:slab_aspen_wood", "", "stairs:slab_aspen_wood"},
-	}
-})
-minetest.register_craft({
-	output = "wreckage:wood_tool_binding",
-	recipe = {
-		{"stairs:slab_acacia_wood", "", "stairs:slab_acacia_wood"},
-		{"","stairs:slab_acacia_wood",""},
-		{"stairs:slab_acacia_wood", "", "stairs:slab_acacia_wood"},
-	}
-})
-minetest.register_craft({
-	output = "wreckage:wood_tool_binding",
-	recipe = {
-		{"stairs:slab_junglewood", "", "stairs:slab_junglewood"},
-		{"","stairs:slab_junglewood",""},
-		{"stairs:slab_junglewood", "", "stairs:slab_junglewood"},
-	}
-})
-minetest.register_craft({
-	output = "wreckage:wood_tool_binding",
-	recipe = {
-		{"stairs:slab_wood", "", "stairs:slab_wood"},
-		{"","stairs:slab_wood",""},
-		{"stairs:slab_wood", "", "stairs:slab_wood"},
-	}
-})
+
 minetest.register_craft({
 	output = "wreckage:wood_axe_head",
 	recipe = {
@@ -96,77 +68,15 @@ minetest.register_craft({
 		{"","","group:wood"},
 	}
 })
-minetest.register_craft({
-	output = "wreckage:wood_shovel_head",
-	recipe = {
-		{"stairs:slab_wood"},
-	}
-})
-minetest.register_craft({
-	output = "wreckage:wood_shovel_head",
-	recipe = {
-		{"stairs:slab_junglewood"},
-	}
-})
-minetest.register_craft({
-	output = "wreckage:wood_shovel_head",
-	recipe = {
-		{"stairs:slab_acacia_wood"},
-	}
-})
-minetest.register_craft({
-	output = "wreckage:wood_shovel_head",
-	recipe = {
-		{"stairs:slab_aspen_wood"},
-	}
-})
-minetest.register_craft({
-	output = "wreckage:wood_shovel_head",
-	recipe = {
-		{"stairs:slab_pine_wood"},
-	}
-})
+
+
 minetest.register_craft({
 	output = "wreckage:wood_hoe_head",
 	recipe = {
 		{"group:wood","group:wood"},
 	}
 })
-minetest.register_craft({
-	output = "wreckage:wood_sword_head",
-	recipe = {
-		{"stairs:slab_pine_wood"},
-		{"group:wood"},
-	}
-})
-minetest.register_craft({
-	output = "wreckage:wood_sword_head",
-	recipe = {
-		{"stairs:slab_wood"},
-		{"group:wood"},
-	}
-})
-minetest.register_craft({
-	output = "wreckage:wood_sword_head",
-	recipe = {
-		{"stairs:slab_aspen_wood"},
-		{"group:wood"},
-	}
-})
-minetest.register_craft({
-	output = "wreckage:wood_sword_head",
-	recipe = {
-		{"stairs:slab_acacia_wood"},
-		{"group:wood"},
-	}
-})
-minetest.register_craft({
-	output = "wreckage:wood_sword_head",
-	recipe = {
-		{"stairs:slab_junglewood"},
-		{"group:wood"},
-	}
-})
+
 minetest.register_craft({
 	output = "wreckage:stone_pickaxe_head",
 	recipe = {
